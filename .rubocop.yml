@@ -1,0 +1,26 @@
+---
+AllCops:
+  Exclude:
+    - Gemfile
+    - Gemfile.lock
+    - bin/**/*
+    - db/**/*
+    - config/**/*
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Layout/FirstHashElementIndentation:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Style/AccessModifierDeclarations:
+  Enabled: false
+Style/EvalWithLocation:
+  Enabled: false
+Security/Eval:
+  Enabled: false
