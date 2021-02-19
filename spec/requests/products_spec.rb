@@ -46,9 +46,6 @@ describe 'products', type: :request do
 
       it 'returns a validation error' do
         expect(response).to be_bad_request
-      end
-
-      it 'return in body a products errors' do
         body = JSON.parse(response.body)
         expect(body.dig('invalid_products', 0, 'errors')).to eq('category' => ['is invalid'])
       end

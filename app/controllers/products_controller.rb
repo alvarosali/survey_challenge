@@ -15,7 +15,7 @@ class ProductsController < ApplicationController
     end
 
     if @errors.empty?
-      render json: {}, status: :ok
+      render json: { message: 'All products added!' }, status: :ok
     else
       render json: { invalid_products: @errors }, status: :bad_request
     end
