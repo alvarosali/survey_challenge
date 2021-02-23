@@ -6,7 +6,8 @@ describe 'interests' do
   it do
     expect(post: 'interests').to route_to(
       controller: 'interests',
-      action: 'create'
+      action: 'create',
+      format: :json
     )
   end
 end
